@@ -1,0 +1,64 @@
+import {
+  withWebComponentsKnobs,
+  Story,
+  Preview,
+  Meta,
+  Props,
+  action,
+  withKnobs,
+  text,
+  number,
+  html
+} from '@open-wc/demoing-storybook';
+
+import '../packages/uui-input/lib/uui-input';
+
+<Meta
+  title="Input"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'uui-input',
+    options: { selectedPanel: 'storybookjs/knobs/panel' }
+  }}
+/>
+
+# UnitedUI Input
+
+#### Input description
+
+Source: [Aon Design System](https://designsystem.aon.com/)
+
+<Preview withToolbar>
+  <Story name="Input" height="300px">
+    {html`
+      <div style="width:300px">
+        <uui-input label="Default"></uui-input>
+        <uui-input label="Default with value" value="Input value"></uui-input>
+        <uui-input
+          label="With placeholder"
+          placeholder="Placeholder text"
+        ></uui-input>
+        <uui-input
+          label="With description"
+          description="Input description text lorem ipsum sit doler avec estran"
+        ></uui-input>
+        <uui-input disabled label="Disabled"></uui-input>
+        <uui-input error label="Error" value="Error value"></uui-input>
+        <uui-input
+          error
+          label="With error message"
+          errorMessage="Error message"
+          value="Error value"
+        ></uui-input>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<!-- The api table will show the data of "uui-card" in `custom-elements.json`. -->
+
+UUI Input API description
+
+<Props of="uui-input" />

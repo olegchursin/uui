@@ -1,0 +1,50 @@
+import {
+  withWebComponentsKnobs,
+  Story,
+  Preview,
+  Meta,
+  Props,
+  action,
+  withKnobs,
+  text,
+  number,
+  html
+} from '@open-wc/demoing-storybook';
+
+import '../packages/uui-button/lib/uui-button';
+
+<Meta
+  title="Button"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'uui-button',
+    options: { selectedPanel: 'storybookjs/knobs/panel' }
+  }}
+/>
+
+# UnitedUI Button
+
+#### The primary call to action must be clear and visible in any medium. The digital space is no different. We must make sure the user always knows what items can be clicked or touched and where the primary task can be done.
+
+To maintain elements that are usable for all form factor sizes, we have created larger touch targets. The minimum touch target size is 44px. Having buttons, text links, action and utility buttons with this larger touch target enables our users to easily recognize the action as well as easily interact with the experience.
+
+Source: [Aon Design System](https://designsystem.aon.com/)
+
+<Preview withToolbar>
+  <Story name="Button styles" height="60px">
+    {html`
+      <uui-button>Default</uui-button>
+      <uui-button prominent>Prominent</uui-button>
+      <uui-button subtle>Subtle</uui-button>
+      <uui-button ghost>Ghost</uui-button>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<!-- The api table will show the data of "uui-button" in `custom-elements.json`. -->
+
+UUI Button API description
+
+<Props of="uui-button" />

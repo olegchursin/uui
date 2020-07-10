@@ -1,0 +1,26 @@
+{
+  "name": "uui-testing",
+  "version": "0.0.3-alpha.0",
+  "description": "UnitedUI Testing",
+  "main": "lib/uui-testing.js",
+  "module": "lib/uui-testing.js",
+  "types": "lib/uui-testing.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "united ui",
+    "testing",
+    "demo",
+    "webcomponent",
+    "web component"
+  ],
+  "author": "Aon Cyber Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "uui-button": "^0.0.3-alpha.0",
+    "uui-common": "^0.0.3-alpha.0"
+  }
+}

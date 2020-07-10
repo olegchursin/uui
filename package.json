@@ -1,0 +1,38 @@
+{
+  "name": "united-ui",
+  "version": "0.0.1",
+  "description": "United UI",
+  "main": "united-ui.js",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "bootstrap": "npm install && npm run hoist",
+    "hoist": "lerna bootstrap --hoist",
+    "dev": "polyserve --npm --module-resolution=node",
+    "tsc": "lerna run tsc",
+    "build": "rollup -c",
+    "bundle": "npm run tsc && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook --node-resolve --watch --open",
+    "storybook:build": "build-storybook"
+  },
+  "keywords": [
+    "united ui",
+    "webcomponents",
+    "web components"
+  ],
+  "author": "Aon Cyber Solutions",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.20.2",
+    "polyserve": "^0.27.15",
+    "rollup": "^1.31.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "typescript": "^3.7.5",
+    "@open-wc/demoing-storybook": "^1.9.4"
+  },
+  "dependencies": {}
+}

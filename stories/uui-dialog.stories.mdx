@@ -1,0 +1,56 @@
+import {
+  withWebComponentsKnobs,
+  Story,
+  Preview,
+  Meta,
+  Props,
+  action,
+  withKnobs,
+  text,
+  number,
+  html
+} from '@open-wc/demoing-storybook';
+
+import '../packages/uui-card/lib/uui-card';
+import '../packages/uui-button/lib/uui-button';
+import '../packages/uui-dialog/lib/uui-dialog';
+
+<Meta
+  title="Dialog"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'uui-dialog',
+    options: { selectedPanel: 'storybookjs/knobs/panel' }
+  }}
+/>
+
+# UnitedUI Dialog
+
+#### Simple Dialog
+
+Source: [Aon Design System](https://designsystem.aon.com/)
+
+<Preview withToolbar>
+  <Story name="Simple dialog" height="300px">
+    {html`
+      <uui-dialog
+        open
+        style="--uui-dialog-width:40%; --uui-dialog-close-icon-size:28px; --uui-dialog-transition-time:0.3s"
+      >
+        <h3>Simple Dialog</h3>
+        <p>
+          Technology continues to change our lives in so many ways – not the
+          least in the way we shop.
+        </p>
+      </uui-dialog>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<!-- The api table will show the data of "uui-dialog" in `custom-elements.json`. -->
+
+UUI Dialog API
+
+<Props of="uui-dialog" />

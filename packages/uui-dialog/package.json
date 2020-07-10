@@ -1,0 +1,24 @@
+{
+  "name": "uui-dialog",
+  "version": "0.0.3-alpha.0",
+  "description": "United UI Dialog",
+  "main": "lib/uui-dialog.js",
+  "module": "lib/uui-dialog.js",
+  "types": "lib/uui-dialog.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "united ui",
+    "dialog",
+    "webcomponent",
+    "web component"
+  ],
+  "author": "Aon Cyber Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "uui-common": "^0.0.3-alpha.0"
+  }
+}

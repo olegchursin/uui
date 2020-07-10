@@ -1,0 +1,64 @@
+import {
+  withWebComponentsKnobs,
+  Story,
+  Preview,
+  Meta,
+  Props,
+  action,
+  withKnobs,
+  text,
+  number,
+  html
+} from '@open-wc/demoing-storybook';
+
+import '../packages/uui-card/lib/uui-card';
+import '../packages/uui-button/lib/uui-button';
+
+<Meta
+  title="Card"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'uui-card',
+    options: { selectedPanel: 'storybookjs/knobs/panel' }
+  }}
+/>
+
+# UnitedUI Card
+
+#### Card description
+
+Source: [Aon Design System](https://designsystem.aon.com/)
+
+<Preview withToolbar>
+  <Story name="Card" height="300px">
+    {html`
+      <uui-card>
+        <h3>Simple Card Title</h3>
+        <p>
+          Technology continues to change our lives in so many ways – not the
+          least in the way we shop.
+        </p>
+      </uui-card>
+    `}
+  </Story>
+  <Story name="Card with button" height="300px">
+    {html`
+      <uui-card>
+        <h3>Simple Card with Button Title</h3>
+        <p>
+          Technology continues to change our lives in so many ways – not the
+          least in the way we shop.
+        </p>
+        <uui-button>Learn more</uui-button>
+      </uui-card>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<!-- The api table will show the data of "uui-card" in `custom-elements.json`. -->
+
+UUI Card API description
+
+<Props of="uui-card" />

@@ -1,0 +1,24 @@
+{
+  "name": "uui-button",
+  "version": "0.0.3-alpha.0",
+  "description": "UnitedUI Button",
+  "main": "lib/uui-button.js",
+  "module": "lib/uui-button.js",
+  "types": "lib/uui-button.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "united ui",
+    "button",
+    "webcomponent",
+    "web component"
+  ],
+  "author": "Aon Cyber Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "uui-common": "^0.0.3-alpha.0"
+  }
+}

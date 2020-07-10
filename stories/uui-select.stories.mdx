@@ -1,0 +1,56 @@
+import {
+  withWebComponentsKnobs,
+  Story,
+  Preview,
+  Meta,
+  Props,
+  action,
+  withKnobs,
+  text,
+  number,
+  html
+} from '@open-wc/demoing-storybook';
+
+import '../packages/uui-select/lib/uui-select';
+
+export const optionsArr = [
+  { label: 'Please select an option', value: '' },
+  { label: 'Option 1', value: 'Value for Option 1' },
+  { label: 'Option 2', value: 'Value for Option 2' }
+];
+
+<Meta
+  title="Select"
+  decorators={[withKnobs, withWebComponentsKnobs]}
+  parameters={{
+    component: 'uui-select',
+    options: { selectedPanel: 'storybookjs/knobs/panel' }
+  }}
+/>
+
+# UnitedUI Select
+
+#### Select description
+
+Source: [Aon Design System](https://designsystem.aon.com/)
+
+<Preview withToolbar>
+  <Story name="Select" height="300px">
+    {html`
+      <div style="width:300px">
+        <uui-select
+          label="Default select"
+          .options="${optionsArr}"
+        ></uui-select>
+      </div>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<!-- The api table will show the data of "uui-select" in `custom-elements.json`. -->
+
+UUI Select API description
+
+<Props of="uui-select" />

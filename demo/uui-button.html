@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="../packages/uui-common/lib/uui-nofouc.js"></script>
+    <script
+      type="module"
+      src="../packages/uui-button/lib/uui-button.js"
+    ></script>
+    <script
+      type="module"
+      src="../packages/uui-testing/lib/uui-testing.js"
+    ></script>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>uui-button component</h1>
+    <p>
+      A UUI styled button
+    </p>
+    <p>
+      <section>
+        <ul>
+          <li>
+            <uui-button-holder>
+              <uui-button id="uui-button"
+                >UUI Button
+                <div class="dot"></div>
+              </uui-button>
+            </uui-button-holder>
+          </li>
+          <li>
+            <uui-button-holder>
+              <uui-button prominent>Prominent UUI Button</uui-button>
+            </uui-button-holder>
+          </li>
+          <li>
+            <uui-button-holder>
+              <uui-button ghost>Ghost</uui-button>
+            </uui-button-holder>
+          </li>
+          <li>
+            <uui-button-holder>
+              <uui-button subtle>Subtle UUI Button</uui-button>
+            </uui-button-holder>
+          </li>
+        </ul>
+      </section>
+    </p>
+  </body>
+</html>
