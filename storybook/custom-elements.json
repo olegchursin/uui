@@ -1,0 +1,383 @@
+{
+  "version": "0.0.1",
+  "tags": [
+    {
+      "name": "uui-button",
+      "description": "UUI Button",
+      "properties": [
+        {
+          "name": "label",
+          "type": "String",
+          "attribute": "label",
+          "description": "label of a button",
+          "default": "Button"
+        },
+        {
+          "name": "prominent",
+          "type": "Boolean",
+          "attribute": "prominent",
+          "description": "Prominent buttons are used for primary page-level actions, and should only be used once per page. Not all pages require a Prominent button. Use for call-to-actions, page navigation or process flows.",
+          "default": "false"
+        },
+        {
+          "name": "subtle",
+          "type": "Boolean",
+          "attribute": "subtle",
+          "description": "Outlined buttons are used for less prominent actions. They can be paired with Default or Primary buttons. They should be used sparingly by themselves.",
+          "default": "false"
+        },
+        {
+          "name": "ghost",
+          "type": "Boolean",
+          "attribute": "ghost",
+          "description": "Ghost buttons are available for when an additional level of hierarchy is needed. Ghost buttons have the smallest footprint, and should be used sparingly.",
+          "default": "false"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attribute": "disabled",
+          "description": "Tells if a button is disabled",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "onclick",
+          "description": "Fires on button click"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Content displayed inside the button"
+        }
+      ],
+      "cssProperties": [
+        {
+          "name": "--uui-button-color",
+          "description": "Button color (currently unavailable)",
+          "type": "Color"
+        },
+        {
+          "name": "--uui-button-text-color",
+          "description": "Button text color (currently unavailable)",
+          "type": "Color"
+        }
+      ]
+    },
+    {
+      "name": "uui-card",
+      "description": "UUI Card",
+      "properties": [],
+      "events": [
+        {
+          "name": "onclick",
+          "description": "Fires on card click"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Content displayed inside the card"
+        }
+      ],
+      "cssProperties": []
+    },
+    {
+      "name": "uui-dialog",
+      "description": "UUI Dialog",
+      "properties": [
+        {
+          "name": "open",
+          "type": "Boolean",
+          "attribute": "open",
+          "description": "Signifies whether dialog is open",
+          "default": "False"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "Content displayed inside the dialog"
+        }
+      ],
+      "cssProperties": [
+        {
+          "name": "--uui-dialog-width",
+          "description": "Dialog width in 'px' or '%'",
+          "type": "String",
+          "default": "75%"
+        },
+        {
+          "name": "--uui-dialog-z-index",
+          "description": "Dialog z-index",
+          "type": "Number",
+          "default": "100"
+        },
+        {
+          "name": "--uui-dialog-close-icon-size",
+          "description": "Dialog close icon size",
+          "type": "String",
+          "default": "28px"
+        },
+        {
+          "name": "--uui-dialog-transition-time",
+          "description": "Transition time",
+          "type": "String",
+          "default": "0.3s"
+        }
+      ]
+    },
+    {
+      "name": "uui-select",
+      "description": "UUI Select",
+      "properties": [
+        {
+          "name": "autocomplete",
+          "type": "String",
+          "attribute": "autocomplete",
+          "description": "A DOMString providing a hint for a user agent's autocomplete feature.",
+          "default": "''"
+        },
+        {
+          "name": "autofocus",
+          "type": "Boolean",
+          "attribute": "autofocus",
+          "description": "This Boolean attribute lets you specify that a form control should have input focus when the page loads. Only one form element in a document can have the autofocus attribute.",
+          "default": "false"
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "attribute": "description",
+          "description": "Select description",
+          "default": "''"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attribute": "disabled",
+          "description": "This Boolean attribute indicates that the user cannot interact with the control. If this attribute is not specified, the control inherits its setting from the containing element, for example `fieldset`; if there is no containing element with the disabled attribute set, then the control is enabled.",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "type": "Boolean",
+          "attribute": "error",
+          "description": "Tells if select has error",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "type": "String",
+          "attribute": "errorMessage",
+          "description": "Error message",
+          "default": "''"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attribute": "label",
+          "description": "Represents a caption for a select in a user interface",
+          "default": "'Label'"
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "attribute": "id",
+          "description": "Custom select id",
+          "default": "'Randomly generated string'"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attribute": "name",
+          "description": "This attribute is used to specify the name of the control.",
+          "default": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attribute": "placeholder",
+          "description": "A string that provides a brief hint to the user as to what kind of information is expected in the field",
+          "default": "''"
+        },
+        {
+          "name": "optionalLabel",
+          "type": "String",
+          "attribute": "optionalLabel",
+          "description": "A label indicating that the field is optional",
+          "default": "''"
+        },
+        {
+          "name": "selectedValue",
+          "type": "String",
+          "attribute": "selectedValue",
+          "description": "A way preselect a certain value. Have to equal the option `value` field.",
+          "default": "''"
+        },
+        {
+          "name": "required",
+          "type": "Boolean",
+          "attribute": "required",
+          "description": "A Boolean attribute indicating that an option with a non-empty string value must be selected.",
+          "default": "false"
+        },
+        {
+          "name": "optional",
+          "type": "Boolean",
+          "attribute": "optional",
+          "description": "A Boolean attribute indicating that an option with may be skipped.",
+          "default": "false"
+        },
+        {
+          "name": "options",
+          "type": "Array",
+          "attribute": "options",
+          "description": "An array of options to populate <option> elements. Type: ISelectOption[].",
+          "default": "'[]'"
+        }
+      ]
+    },
+    {
+      "name": "uui-input",
+      "description": "UUI Input",
+      "properties": [
+        {
+          "name": "autocomplete",
+          "type": "String",
+          "attribute": "autocomplete",
+          "description": "Space separated string that describes what, if any, type of autocomplete functionality the input should provide",
+          "default": "''"
+        },
+        {
+          "name": "autofocus",
+          "type": "Boolean",
+          "attribute": "autofocus",
+          "description": "Automatically focus the form control when the page is loaded",
+          "default": "false"
+        },
+        {
+          "name": "description",
+          "type": "String",
+          "attribute": "description",
+          "description": "Input description",
+          "default": "''"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attribute": "disabled",
+          "description": "Tells if input is disabled",
+          "default": "false"
+        },
+        {
+          "name": "error",
+          "type": "Boolean",
+          "attribute": "error",
+          "description": "Tells if input has error",
+          "default": "false"
+        },
+        {
+          "name": "errorMessage",
+          "type": "String",
+          "attribute": "errorMessage",
+          "description": "Error message",
+          "default": "''"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attribute": "label",
+          "description": "Represents a caption for an input in a user interface",
+          "default": "'Label'"
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "attribute": "id",
+          "description": "Custom input id",
+          "default": "'Randomly generated string'"
+        },
+        {
+          "name": "min",
+          "type": "Number",
+          "attribute": "min",
+          "description": "The most negative value in the range of permitted values",
+          "default": ""
+        },
+        {
+          "name": "max",
+          "type": "Number",
+          "attribute": "max",
+          "description": "The greatest value in the range of permitted values",
+          "default": ""
+        },
+        {
+          "name": "minlength",
+          "type": "Number",
+          "attribute": "minlength",
+          "description": "The minimum number of characters (as UTF-16 code units) the user can enter into the field",
+          "default": ""
+        },
+        {
+          "name": "maxlength",
+          "type": "Number",
+          "attribute": "maxlength",
+          "description": "The maximum number of characters (as UTF-16 code units) the user can enter into the field",
+          "default": ""
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attribute": "name",
+          "description": "Name for the input control. This name is submitted along with the control's value when the form data is submitted",
+          "default": ""
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attribute": "placeholder",
+          "description": "A string that provides a brief hint to the user as to what kind of information is expected in the field",
+          "default": "''"
+        },
+        {
+          "name": "readonly",
+          "type": "Boolean",
+          "attribute": "readonly",
+          "description": "If present, indicates that the user should not be able to edit the value of the input",
+          "default": "false"
+        },
+        {
+          "name": "required",
+          "type": "Boolean",
+          "attribute": "required",
+          "description": "If present, indicates that the user must specify a value for the input before the owning form can be submitted",
+          "default": "false"
+        },
+        {
+          "name": "size",
+          "type": "Number",
+          "attribute": "size",
+          "description": "Specifies how much of the input is shown. Valid for email, password, tel, and text input types only. CSS width takes precedence over size attribute.",
+          "default": ""
+        },
+        {
+          "name": "step",
+          "type": "Number",
+          "attribute": "step",
+          "description": "Valid for the numeric input types, including number, date/time input types, and range, the step attribute is a number that specifies the granularity that the value must adhere to.",
+          "default": "false"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attribute": "type",
+          "description": "A string specifying the type of control to render.",
+          "default": "'text'"
+        }
+      ]
+    }
+  ]
+}
